@@ -1,0 +1,47 @@
+﻿action_id,action_name,count,ratio(%)
+79,"talk to (e.g., self, a person, a group)",2627,27.34
+17,carry/hold (an object),2577,26.82
+12,stand,2520,26.22
+43,point to (an object),321,3.34
+14,walk,294,3.06
+59,touch (an object),217,2.26
+36,lift/pick up,178,1.85
+47,put down,131,1.36
+69,hand wave,96,1.0
+80,watch (a person),88,0.92
+30,enter,63,0.66
+62,work on a computer,43,0.45
+29,eat,43,0.45
+27,drink,38,0.4
+61,"watch (e.g., TV)/any unspecified action",30,0.31
+34,hit (an object),30,0.31
+65,give/serve (an object) to (a person),26,0.27
+26,dress/undress clothing,22,0.23
+6,get up,21,0.22
+7,jump/leap,20,0.21
+38,"open (e.g., a window, a car door)",19,0.2
+9,martial art,18,0.19
+3,crouch/kneel,18,0.19
+46,push (an object),16,0.17
+11,sit,13,0.14
+45,pull (an object),13,0.14
+8,lie/sleep,13,0.14
+74,listen to (a person),13,0.14
+10,run/jog,12,0.12
+1,bend/bow (at the waist),12,0.12
+66,grab (a person),10,0.1
+5,fall down,9,0.09
+22,"close (e.g., a door, a box)",9,0.09
+24,cut,9,0.09
+60,"turn (e.g., a screwdriver)",8,0.08
+57,text on/look at a cellphone,7,0.07
+78,take (an object) from (a person),5,0.05
+28,operate spaceship,4,0.04
+58,throw,4,0.04
+41,play musical instrument,3,0.03
+70,hug (a person),3,0.03
+56,take a photo,2,0.02
+68,hand shake,2,0.02
+48,read,1,0.01
+64,fight/hit (a person),1,0.01
+76,push (another person),1,0.01

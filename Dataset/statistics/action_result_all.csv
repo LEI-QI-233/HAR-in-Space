@@ -1,0 +1,51 @@
+﻿action_id,action_name,count,ratio(%)
+12,stand,3218,24.27
+79,"talk to (e.g., self, a person, a group)",3131,23.61
+17,carry/hold (an object),3126,23.57
+80,watch (a person),713,5.38
+14,walk,369,2.78
+59,touch (an object),353,2.66
+61,"watch (e.g., TV)/any unspecified action",346,2.61
+43,point to (an object),323,2.44
+11,sit,252,1.9
+36,lift/pick up,188,1.42
+74,listen to (a person),148,1.12
+69,hand wave,140,1.06
+47,put down,138,1.04
+62,work on a computer,110,0.83
+30,enter,68,0.51
+65,give/serve (an object) to (a person),46,0.35
+29,eat,45,0.34
+27,drink,43,0.32
+66,grab (a person),41,0.31
+34,hit (an object),33,0.25
+45,pull (an object),32,0.24
+38,"open (e.g., a window, a car door)",32,0.24
+26,dress/undress clothing,31,0.23
+64,fight/hit (a person),27,0.2
+1,bend/bow (at the waist),26,0.2
+6,get up,25,0.19
+46,push (an object),24,0.18
+28,operate spaceship,20,0.15
+3,crouch/kneel,20,0.15
+7,jump/leap,20,0.15
+9,martial art,18,0.14
+8,lie/sleep,17,0.13
+60,"turn (e.g., a screwdriver)",17,0.13
+70,hug (a person),16,0.12
+78,take (an object) from (a person),15,0.11
+48,read,15,0.11
+22,"close (e.g., a door, a box)",13,0.1
+10,run/jog,12,0.09
+5,fall down,10,0.08
+24,cut,9,0.07
+57,text on/look at a cellphone,7,0.05
+58,throw,4,0.03
+68,hand shake,4,0.03
+63,write,3,0.02
+67,hand clap,3,0.02
+76,push (another person),3,0.02
+41,play musical instrument,3,0.02
+56,take a photo,2,0.02
+20,"climb (e.g., a mountain)",1,0.01
+72,kiss (a person),1,0.01
