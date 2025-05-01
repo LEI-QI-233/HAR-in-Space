@@ -1,0 +1,43 @@
+﻿action_id,action_name,count,ratio(%)
+12,stand,698,19.12
+80,watch (a person),625,17.12
+17,carry/hold (an object),549,15.04
+79,"talk to (e.g., self, a person, a group)",504,13.8
+61,"watch (e.g., TV)/any unspecified action",316,8.66
+11,sit,239,6.55
+59,touch (an object),136,3.73
+74,listen to (a person),135,3.7
+14,walk,75,2.05
+62,work on a computer,67,1.84
+69,hand wave,44,1.21
+66,grab (a person),31,0.85
+64,fight/hit (a person),26,0.71
+65,give/serve (an object) to (a person),20,0.55
+45,pull (an object),19,0.52
+28,operate spaceship,16,0.44
+1,bend/bow (at the waist),14,0.38
+48,read,14,0.38
+70,hug (a person),13,0.36
+38,"open (e.g., a window, a car door)",13,0.36
+78,take (an object) from (a person),10,0.27
+36,lift/pick up,10,0.27
+60,"turn (e.g., a screwdriver)",9,0.25
+26,dress/undress clothing,9,0.25
+46,push (an object),8,0.22
+47,put down,7,0.19
+27,drink,5,0.14
+30,enter,5,0.14
+6,get up,4,0.11
+22,"close (e.g., a door, a box)",4,0.11
+8,lie/sleep,4,0.11
+63,write,3,0.08
+34,hit (an object),3,0.08
+67,hand clap,3,0.08
+68,hand shake,2,0.05
+29,eat,2,0.05
+3,crouch/kneel,2,0.05
+76,push (another person),2,0.05
+43,point to (an object),2,0.05
+20,"climb (e.g., a mountain)",1,0.03
+5,fall down,1,0.03
+72,kiss (a person),1,0.03
