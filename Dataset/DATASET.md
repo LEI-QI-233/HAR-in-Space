@@ -32,12 +32,22 @@ HAR_IN_SPACE_VIDEOS
 ### Descriptions
 All videos are **three-second, 480p, 30fps, H.264** video clips.  
 
+#### `videos` and `videos_annotated` folders
+The `videos` folder contains the original video clips, which are used for tasks such as training models.
+
+
+The `videos_annotated` folder contains video clips with bounding boxes and person IDs overlaid, providing an intuitive visualization of the annotation information.
+
+Other than that, the folder structure and video names are exactly the same.
+
+#### `movie` and `real` folders
 In the `movie` folder, `movie name` is the name of the movie. 
 
 In the `real` folder, all videos are downloaded from YouTube. `real video id` is the video id on YouTube. 
 
 All video clips are valid clips and completely correspond to the [csv files](csv_files).
 
+#### video clips
 All video clips have been screened, irrelevant and invalid video clips have been deleted, such as scenes that are not in space in the movie and scenes where no one appears in the actual video. Therefore, the video clip serial numbers in the video folder are **not continuous**. 
 
 The video serial number can be used to infer the position of the video clip in the complete video. The method is to multiply the serial number by 3 to equal the second of the original video.
