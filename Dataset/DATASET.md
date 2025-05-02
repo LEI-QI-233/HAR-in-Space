@@ -86,6 +86,9 @@ This folder contains the label map
 #### [label_map.pbtxt](label_map/label_map.pbtxt)
 This label map is modified based on the label map of the [ava dataset](https://research.google.com/ava/index.html).The format is consistent with [ava_action_list_v2.2.pbtxt](https://research.google.com/ava/download/ava_action_list_v2.2.pbtxt)
 
+#### [label_map.pdf](label_map/label_map.pdf)
+The label map is provided in PDF format for easy manual reading and checking.
+
 ### [statistics](statistics/)
 In this folder are all the statistics for the dataset.
 
