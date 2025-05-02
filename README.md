@@ -32,7 +32,7 @@ Researchers are welcome to download and use this dataset. Please cite appropriat
 Please check [DATASET.md](Dataset/DATASET.md).
 
 ## Contributors
-PySlowFast is written and maintained by [Lei Qi](https://github.com/LEI-QI-233), supervised by [Kunyu Peng](https://cvhci.iar.kit.edu/people_2123.php)
+HAR-in-Space is written and maintained by [Lei Qi](https://github.com/LEI-QI-233), supervised by [Kunyu Peng](https://cvhci.iar.kit.edu/people_2123.php)
 
 ## Citing Zero-Gravity Human Action Recognition Dataset
 
