@@ -92,11 +92,11 @@ The label map is provided in PDF format for easy manual reading and checking.
 ### [statistics](statistics/)
 In this folder are all the statistics for the dataset.
 
-[overall_result.csv](statistics/overall_result.csv) is a statistical summary of the overall quantity, such as the total number of videos, the number of action tags, and the total number of action types.
+[HAR_Dataset_Statistics.pdf](statistics/HAR_Dataset_Statistics.pdf) organizes all the statistical data in the folder into a table format for easy viewing.
 
-The other files contain detailed information about these statistics, such as the number of each action and the percentage of the total.
+The csv files in the folder contain the raw information of different statistical data.
 
-Files ending with 
+csv Files ending with 
 - "**all**" represent statistics based on all data.
 - "**movie**" represent statistics based on movies. 
 - "**real**" represent statistics based on real videos.
