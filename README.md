@@ -32,7 +32,7 @@ Researchers are welcome to download and use this dataset. Please cite appropriat
 Please check [DATASET.md](Dataset/DATASET.md).
 
 ## Contributors
-HAR-in-Space is written and maintained by [Lei Qi](https://github.com/LEI-QI-233), supervised by [Kunyu Peng](https://cvhci.iar.kit.edu/people_2123.php)
+HAR-in-Space is written and maintained by [Lei Qi](https://github.com/LEI-QI-233), [Di Wen](https://github.com/Kratos-Wen) and [Kunyu Peng](https://cvhci.iar.kit.edu/people_2123.php)
 
 ## Citing Zero-Gravity Human Action Recognition Dataset
 
@@ -40,10 +40,22 @@ If you find this dataset useful in your research, please use the following BibTe
 
 ```BibTeX
 @misc{harinspace2025,
-  author =       {Lei Qi},
+  author =       {Lei Qi and Di Wen},
   title =        {HAR-in-Space},
   howpublished = {\url{https://github.com/LEI-QI-233/HAR-in-Space}},
   year =         {2025}
 }
 ```
 
+## Reference
+This repositority refers the following:
+
+```BibTeX
+@misc{fan2020pyslowfast,
+  author =       {Haoqi Fan and Yanghao Li and Bo Xiong and Wan-Yen Lo and
+                  Christoph Feichtenhofer},
+  title =        {PySlowFast},
+  howpublished = {\url{https://github.com/facebookresearch/slowfast}},
+  year =         {2020}
+}
+```
