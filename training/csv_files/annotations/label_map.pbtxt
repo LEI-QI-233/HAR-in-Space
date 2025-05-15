@@ -1,0 +1,299 @@
+item {
+  name: "bend/bow (at the waist)"
+  id: 1
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "crouch/kneel"
+  id: 3
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "fall down"
+  id: 5
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "get up"
+  id: 6
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "jump/leap"
+  id: 7
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "lie/sleep"
+  id: 8
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "martial art"
+  id: 9
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "run/jog"
+  id: 10
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "sit"
+  id: 11
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "stand"
+  id: 12
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "walk"
+  id: 14
+  label_type: PERSON_MOVEMENT
+}
+
+item {
+  name: "carry/hold (an object)"
+  id: 17
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "climb (e.g., a mountain)"
+  id: 20
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "close (e.g., a door, a box)"
+  id: 22
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "cut"
+  id: 24
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "dress/undress clothing"
+  id: 26
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "drink"
+  id: 27
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "operate spaceship"
+  id: 28
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "eat"
+  id: 29
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "enter"
+  id: 30
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "hit (an object)"
+  id: 34
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "lift/pick up"
+  id: 36
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "open (e.g., a window, a car door)"
+  id: 38
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "play musical instrument"
+  id: 41
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "point to (an object)"
+  id: 43
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "pull (an object)"
+  id: 45
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "push (an object)"
+  id: 46
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "put down"
+  id: 47
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "read"
+  id: 48
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "take a photo"
+  id: 56
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "text on/look at a cellphone"
+  id: 57
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "throw"
+  id: 58
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "touch (an object)"
+  id: 59
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "turn (e.g., a screwdriver)"
+  id: 60
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "watch (e.g., TV)/any unspecified action"
+  id: 61
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "work on a computer"
+  id: 62
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "write"
+  id: 63
+  label_type: OBJECT_MANIPULATION
+}
+
+item {
+  name: "fight/hit (a person)"
+  id: 64
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "give/serve (an object) to (a person)"
+  id: 65
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "grab (a person)"
+  id: 66
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "hand clap"
+  id: 67
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "hand shake"
+  id: 68
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "hand wave"
+  id: 69
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "hug (a person)"
+  id: 70
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "kiss (a person)"
+  id: 72
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "listen to (a person)"
+  id: 74
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "push (another person)"
+  id: 76
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "take (an object) from (a person)"
+  id: 78
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "talk to (e.g., self, a person, a group)"
+  id: 79
+  label_type: PERSON_INTERACTION
+}
+
+item {
+  name: "watch (a person)"
+  id: 80
+  label_type: PERSON_INTERACTION
+}
