@@ -211,8 +211,8 @@ def evaluate_ava(
     )
 
     # ------- 写结果 CSV（可选）-------
-    write_results(detections, f"detections_{name}.csv")
-    write_results(groundtruth,  f"groundtruth_{name}.csv")
+    # write_results(detections, f"detections_{name}.csv")
+    # write_results(groundtruth,  f"groundtruth_{name}.csv")
 
     # ------- 计算官方 mAP -------
     results = run_evaluation(categories, groundtruth, detections, excluded_keys)

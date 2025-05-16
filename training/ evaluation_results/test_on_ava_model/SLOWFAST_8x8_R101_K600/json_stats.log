@@ -1,0 +1,4 @@
+json_stats: {"mode": "test", "map": 0.06965, "f1_macro": 0.00942, "auroc_macro": 0.52802, "recall_macro": 0.00842}
+json_stats: {"mode": "test", "map": 0.06965, "f1_macro": 0.00942, "auroc_macro": 0.52802, "recall_macro": 0.00842}
+json_stats: {"mode": "test", "map": 0.14952, "f1_macro": 0.01994, "auroc_macro": 0.71007, "recall_macro": 0.01350}
+json_stats: {"mode": "test", "map": 0.23807, "f1_macro": 0.06321, "auroc_macro": 0.77826, "recall_macro": 0.06616}

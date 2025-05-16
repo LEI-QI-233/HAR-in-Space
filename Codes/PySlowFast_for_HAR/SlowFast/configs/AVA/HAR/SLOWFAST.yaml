@@ -1,32 +1,38 @@
 TRAIN:
-  ENABLE: false
+  ENABLE: False
   DATASET: ava
-  BATCH_SIZE: 63
+  BATCH_SIZE: 64
   EVAL_PERIOD: 5
   CHECKPOINT_PERIOD: 5
   AUTO_RESUME: True
-  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/pretrained_models/SLOWFAST_8x8_R50.pkl
+  CHECKPOINT_FILE_PATH: 
   CHECKPOINT_TYPE: caffe2
   MIXED_PRECISION: True
 
 TEST:
-  ENABLE: true
+  ENABLE: True
   DATASET: ava
-  BATCH_SIZE: 3
-  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/SLOWFAST_8x8_R50/checkpoints/checkpoint_epoch_00030.pyth
+  BATCH_SIZE: 4
+  CHECKPOINT_FILE_PATH: 
+  #CHECKPOINT_TYPE: caffe2
 
-OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/SLOWFAST_8x8_R50
+OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/test_on_ava_model/SLOWFAST_32x2_R101_K600
 
 AVA:
-  # train 和 test 每次都需要改
+  # train and test file need to be changed for different work
 
-  # GROUNDTRUTH_FILE: "ava_val.csv"
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
+
+  # GROUNDTRUTH_FILE: "ava_val_gt.csv"
   # TEST_LISTS: ["val.csv"]
   # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
 
-  GROUNDTRUTH_FILE: "ava_test.csv"
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
+
+  GROUNDTRUTH_FILE: "ava_test_gt.csv"
   TEST_LISTS: ["test.csv"]
   TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
+
 
   DETECTION_SCORE_THRESH: 0.0
   FRAME_LIST_DIR:    "../ava/frame_lists"
@@ -35,6 +41,7 @@ AVA:
   FULL_TEST_ON_VAL: True
   TRAIN_GT_BOX_LISTS: ["ava_train.csv"]
   LABEL_MAP_FILE: "label_map.pbtxt"
+
 
 DATA:
   NUM_FRAMES: 8
@@ -73,8 +80,8 @@ BN:
 SOLVER:
   BASE_LR: 0.1
   LR_POLICY: steps_with_relative_lrs
-  STEPS: [0, 20, 30, 40]
-  LRS: [1, 0.1, 0.01, 0.001]
+  STEPS: [0, 20, 30, 40, 50]
+  LRS: [1, 0.1, 0.01, 0.001, 0.0001]
   MAX_EPOCH: 40
   MOMENTUM: 0.9
   WEIGHT_DECAY: 1e-7
@@ -89,8 +96,8 @@ MODEL:
   DROPOUT_RATE: 0.5
   HEAD_ACT: none
 DATA_LOADER:
-  NUM_WORKERS: 12
+  NUM_WORKERS: 8
   PIN_MEMORY: True
-NUM_GPUS: 3
+NUM_GPUS: 4
 NUM_SHARDS: 1
 RNG_SEED: 0

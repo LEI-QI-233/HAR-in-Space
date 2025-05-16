@@ -1,0 +1,1 @@
+json_stats: {"mode": "test", "map": 0.16244, "f1_macro": 0.02674, "auroc_macro": 0.73831, "recall_macro": 0.01990}

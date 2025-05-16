@@ -1,7 +1,7 @@
 TRAIN:
   ENABLE: False
   DATASET: ava
-  BATCH_SIZE: 63
+  BATCH_SIZE: 64
   EVAL_PERIOD: 5
   CHECKPOINT_PERIOD: 5
   AUTO_RESUME: True
@@ -15,18 +15,22 @@ OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/X3D_S
 TEST:
   ENABLE: True
   DATASET: ava
-  BATCH_SIZE: 3
-  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/X3D_S/checkpoints/checkpoint_epoch_00025.pyth
+  BATCH_SIZE: 4
+  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/X3D_S/checkpoints/checkpoint_epoch_00035.pyth
   NUM_SPATIAL_CROPS: 3
 
 AVA:
-  # train 和 test 每次都需要改
+  # train and test file need to be changed for different work
 
-  # GROUNDTRUTH_FILE: "ava_val.csv"
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
+
+  # GROUNDTRUTH_FILE: "ava_val_gt.csv"
   # TEST_LISTS: ["val.csv"]
   # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
 
-  GROUNDTRUTH_FILE: "ava_test.csv"
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
+
+  GROUNDTRUTH_FILE: "ava_test_gt.csv"
   TEST_LISTS: ["test.csv"]
   TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
 
@@ -87,6 +91,6 @@ MODEL:
 DATA_LOADER:
   NUM_WORKERS: 12
   PIN_MEMORY: True
-NUM_GPUS: 3
+NUM_GPUS: 4
 NUM_SHARDS: 1
 RNG_SEED: 0

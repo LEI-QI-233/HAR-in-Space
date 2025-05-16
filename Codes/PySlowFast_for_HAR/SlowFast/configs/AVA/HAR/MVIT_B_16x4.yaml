@@ -1,5 +1,5 @@
 TRAIN:
-  ENABLE: True
+  ENABLE: False
   DATASET: ava
   BATCH_SIZE: 48
   EVAL_PERIOD: 5
@@ -13,22 +13,26 @@ TRAIN:
 OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/MVIT_B_16x4
 
 TEST:
-  ENABLE: False
+  ENABLE: True
   DATASET: ava
-  BATCH_SIZE: 3
+  BATCH_SIZE: 4
   NUM_SPATIAL_CROPS: 1
-  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/MVIT_B_16x4/checkpoints/checkpoint_epoch_00045.pyth
+  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/MVIT_B_16x4/checkpoints/checkpoint_epoch_00050.pyth
 
 AVA:
-  # train 和 test 每次都需要改
+  # train and test file need to be changed for different work
 
-  GROUNDTRUTH_FILE: "ava_val.csv"
-  TEST_LISTS: ["val.csv"]
-  TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
 
-  # GROUNDTRUTH_FILE: "ava_test.csv"
-  # TEST_LISTS: ["test.csv"]
-  # TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
+  # GROUNDTRUTH_FILE: "ava_val_gt.csv"
+  # TEST_LISTS: ["val.csv"]
+  # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
+
+  GROUNDTRUTH_FILE: "ava_test_gt.csv"
+  TEST_LISTS: ["test.csv"]
+  TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
 
   DETECTION_SCORE_THRESH: 0.0
   FRAME_LIST_DIR:    "../ava/frame_lists"
@@ -104,7 +108,7 @@ SOLVER:
   WARMUP_START_LR: 1e-6
   OPTIMIZING_METHOD: adamw
 MODEL:
-  NUM_CLASSES: 50          # ← 按你的 label_map.pbtxt
+  NUM_CLASSES: 50        
   ARCH: mvit
   MODEL_NAME: MViT
   LOSS_FUNC: bce_logit
@@ -113,8 +117,8 @@ MODEL:
 
 
 DATA_LOADER:
-  NUM_WORKERS: 12
+  NUM_WORKERS: 8
   PIN_MEMORY: True
-NUM_GPUS: 3
+NUM_GPUS: 4
 NUM_SHARDS: 1
 RNG_SEED: 0
