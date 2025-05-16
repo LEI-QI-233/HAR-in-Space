@@ -1,7 +1,7 @@
 # HAR-in-Space
 Human Action Recognition in Zero Gravity
 
-## [Dataset](dataset): MicroG-4M :a new dataset for HAR, VQA, and Captioning under microgravity
+## [MicroG-4M](dataset): specific for HAR, VQA, and Captioning under microgravity
 This dataset is an open-source dataset specifically designed for Human Action Recognition in zero-gravity environments, aiming to support research and applications in this emerging field.
 
 With the rapid advancement of aerospace technology, humans are expected to carry out increasing activities in space stations and space environments. Current human action recognition technologies are mainly developed for terrestrial environments and cannot effectively transfer to the zero-gravity conditions of space. Furthermore, existing datasets are insufficient for research related to space scenarios.
