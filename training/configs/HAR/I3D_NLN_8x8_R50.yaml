@@ -19,15 +19,19 @@ TEST:
 OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/evaluations/I3D_NLN_8x8_R50
 
 AVA:
-  # train 和 test 每次都需要改
+  # train and test file need to be changed for different work
 
-  GROUNDTRUTH_FILE: "ava_val_gt.csv"
-  TEST_LISTS: ["val.csv"]
-  TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
 
-  # GROUNDTRUTH_FILE: "ava_test_gt.csv"
-  # TEST_LISTS: ["test.csv"]
-  # TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
+  # GROUNDTRUTH_FILE: "ava_val_gt.csv"
+  # TEST_LISTS: ["val.csv"]
+  # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
+
+  GROUNDTRUTH_FILE: "ava_test_gt.csv"
+  TEST_LISTS: ["test.csv"]
+  TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
 
   DETECTION_SCORE_THRESH: 0.0
   FRAME_LIST_DIR:    "../ava/frame_lists"

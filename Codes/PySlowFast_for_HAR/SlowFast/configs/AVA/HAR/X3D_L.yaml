@@ -1,7 +1,7 @@
 TRAIN:
-  ENABLE: True
+  ENABLE: False
   DATASET: ava
-  BATCH_SIZE: 63
+  BATCH_SIZE: 16
   EVAL_PERIOD: 5
   CHECKPOINT_PERIOD: 5
   AUTO_RESUME: True
@@ -13,22 +13,26 @@ TRAIN:
 OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/X3D_L
 
 TEST:
-  ENABLE: false
+  ENABLE: True
   DATASET: ava
-  BATCH_SIZE: 3
-  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/C2D_8x8_R50_IN1K/checkpoints/checkpoint_epoch_00035.pyth
+  BATCH_SIZE: 4
+  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/X3D_L/checkpoints/checkpoint_epoch_00030.pyth
   NUM_SPATIAL_CROPS: 3
 
 AVA:
-  # train 和 test 每次都需要改
+  # train and test file need to be changed for different work
 
-  GROUNDTRUTH_FILE: "ava_val.csv"
-  TEST_LISTS: ["val.csv"]
-  TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
 
-  # GROUNDTRUTH_FILE: "ava_test.csv"
-  # TEST_LISTS: ["test.csv"]
-  # TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
+  # GROUNDTRUTH_FILE: "ava_val_gt.csv"
+  # TEST_LISTS: ["val.csv"]
+  # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
+
+  GROUNDTRUTH_FILE: "ava_test_gt.csv"
+  TEST_LISTS: ["test.csv"]
+  TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
 
   DETECTION_SCORE_THRESH: 0.0
   FRAME_LIST_DIR:    "../ava/frame_lists"
@@ -66,16 +70,17 @@ BN:
   NUM_BATCHES_PRECISE: 200
   WEIGHT_DECAY: 0.0
 SOLVER:
-  BASE_LR: 0.1
-  LR_POLICY: steps_with_relative_lrs
-  STEPS: [0, 20, 30, 40]
-  LRS: [1, 0.1, 0.01, 0.001]
-  MAX_EPOCH: 40
-  MOMENTUM: 0.9
-  WEIGHT_DECAY: 1e-7
-  WARMUP_EPOCHS: 5.0
-  WARMUP_START_LR: 0.000125
-  OPTIMIZING_METHOD: sgd
+  BASE_LR: 0.1                          
+  LR_POLICY: steps_with_relative_lrs   
+  STEPS: [0, 20, 30, 36]               
+  LRS: [1, 0.1, 0.01, 0.001]           
+  MAX_EPOCH: 40                       
+  MOMENTUM: 0.9                        
+  WEIGHT_DECAY: 1e-5                   
+  WARMUP_EPOCHS: 5.0                  
+  WARMUP_START_LR: 0.000125         
+  OPTIMIZING_METHOD: sgd               
+
 MODEL:
   NUM_CLASSES: 50
   ARCH: x3d
@@ -84,9 +89,9 @@ MODEL:
   DROPOUT_RATE: 0.5
   HEAD_ACT: none
 DATA_LOADER:
-  NUM_WORKERS: 12
+  NUM_WORKERS: 8
   PIN_MEMORY: True
-NUM_GPUS: 3
+NUM_GPUS: 4
 NUM_SHARDS: 1
 RNG_SEED: 0
 

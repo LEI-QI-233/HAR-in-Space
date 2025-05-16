@@ -1,5 +1,5 @@
 TRAIN:
-  ENABLE: True
+  ENABLE: False
   DATASET: ava
   BATCH_SIZE: 48
   EVAL_PERIOD: 5
@@ -13,23 +13,28 @@ TRAIN:
 OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/MVITv2_S_16x4
 
 TEST:
-  ENABLE: False
+  ENABLE: True
   DATASET: ava
-  BATCH_SIZE: 3
+  BATCH_SIZE: 4
   NUM_SPATIAL_CROPS: 1
   NUM_ENSEMBLE_VIEWS: 5
-  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/MVITv2_S_16x4/checkpoints/checkpoint_epoch_00035.pyth
+  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/results/MVITv2_S_16x4/checkpoints/checkpoint_epoch_00040.pyth
 
 AVA:
-  # train 和 test 每次都需要改
+AVA:
+  # train and test file need to be changed for different work
 
-  GROUNDTRUTH_FILE: "ava_val.csv"
-  TEST_LISTS: ["val.csv"]
-  TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
 
-  # GROUNDTRUTH_FILE: "ava_test.csv"
-  # TEST_LISTS: ["test.csv"]
-  # TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
+  # GROUNDTRUTH_FILE: "ava_val_gt.csv"
+  # TEST_LISTS: ["val.csv"]
+  # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
+
+  GROUNDTRUTH_FILE: "ava_test_gt.csv"
+  TEST_LISTS: ["test.csv"]
+  TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
 
   DETECTION_SCORE_THRESH: 0.0
   FRAME_LIST_DIR:    "../ava/frame_lists"
@@ -40,7 +45,7 @@ AVA:
   LABEL_MAP_FILE: "label_map.pbtxt"
 
 DETECTION:
-  ENABLE: True           # 必开：行为检测分支
+  ENABLE: True         
   ALIGNED: True
 
 DATA:
@@ -52,7 +57,7 @@ DATA:
   TRAIN_CROP_SIZE: 224
   TEST_CROP_SIZE: 224
   INPUT_CHANNEL_NUM: [3]
-  PATH_TO_DATA_DIR: "../ava"           # ← 加上根目录路径
+  PATH_TO_DATA_DIR: "../ava"          
   TRAIN_JITTER_SCALES_RELATIVE: [0.08, 1.0]
   TRAIN_JITTER_ASPECT_RELATIVE: [0.75, 1.3333]
 MVIT:
@@ -91,7 +96,7 @@ AUG:
   RE_COUNT: 1
   RE_SPLIT: False
 
-# 行为检测通常 **不使用** Mixup/CutMix，可直接关闭
+
 MIXUP:
   ENABLE: False
 
@@ -109,7 +114,7 @@ SOLVER:
   OPTIMIZING_METHOD: adamw
 
 MODEL:
-  NUM_CLASSES: 50          # ← 按你的 label_map.pbtxt
+  NUM_CLASSES: 50        
   ARCH: mvit
   MODEL_NAME: MViT
   LOSS_FUNC: bce_logit
@@ -117,8 +122,8 @@ MODEL:
   HEAD_ACT: none
 
 DATA_LOADER:
-  NUM_WORKERS: 12
+  NUM_WORKERS: 8
   PIN_MEMORY: True
-NUM_GPUS: 3
+NUM_GPUS: 4
 NUM_SHARDS: 1
 RNG_SEED: 0

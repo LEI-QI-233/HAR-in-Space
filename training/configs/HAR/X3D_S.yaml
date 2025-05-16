@@ -20,11 +20,15 @@ TEST:
   NUM_SPATIAL_CROPS: 3
 
 AVA:
-  # train 和 test 每次都需要改
+  # train and test file need to be changed for different work
+
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
 
   # GROUNDTRUTH_FILE: "ava_val_gt.csv"
   # TEST_LISTS: ["val.csv"]
   # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
 
   GROUNDTRUTH_FILE: "ava_test_gt.csv"
   TEST_LISTS: ["test.csv"]

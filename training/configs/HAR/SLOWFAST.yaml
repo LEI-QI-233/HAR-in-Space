@@ -5,7 +5,7 @@ TRAIN:
   EVAL_PERIOD: 5
   CHECKPOINT_PERIOD: 5
   AUTO_RESUME: True
-  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/pretrained_models/SLOWFAST_8x8_R50.pkl
+  CHECKPOINT_FILE_PATH: 
   CHECKPOINT_TYPE: caffe2
   MIXED_PRECISION: True
 
@@ -13,21 +13,26 @@ TEST:
   ENABLE: True
   DATASET: ava
   BATCH_SIZE: 4
-  CHECKPOINT_FILE_PATH: /home/lqi/lqi_temp/trainingspace/pretrained_models/ava_pretrained/SLOWFAST_32x2_R101_50_50.pkl
+  CHECKPOINT_FILE_PATH: 
   #CHECKPOINT_TYPE: caffe2
 
 OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/test_on_ava_model/SLOWFAST_32x2_R101_K600
 
 AVA:
-  # train 和 test 每次都需要改
+  # train and test file need to be changed for different work
+
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
 
   # GROUNDTRUTH_FILE: "ava_val_gt.csv"
   # TEST_LISTS: ["val.csv"]
   # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
 
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
+
   GROUNDTRUTH_FILE: "ava_test_gt.csv"
   TEST_LISTS: ["test.csv"]
   TEST_PREDICT_BOX_LISTS: ["ava_test_predicted_boxes.csv"]
+
 
   DETECTION_SCORE_THRESH: 0.0
   FRAME_LIST_DIR:    "../ava/frame_lists"
@@ -36,7 +41,7 @@ AVA:
   FULL_TEST_ON_VAL: True
   TRAIN_GT_BOX_LISTS: ["ava_train.csv"]
   LABEL_MAP_FILE: "label_map.pbtxt"
-  # LABEL_MAP_FILE: "/home/lqi/lqi_temp/trainingspace/pretrained_models/ava_pretrained/ava_action_list_v2.2.pbtxt"
+
 
 DATA:
   NUM_FRAMES: 8

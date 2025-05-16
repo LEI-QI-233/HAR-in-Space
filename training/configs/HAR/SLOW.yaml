@@ -21,11 +21,15 @@ TEST:
 OUTPUT_DIR: /home/lqi/lqi_temp/trainingspace/results/test_on_ava_model/SLOW_8x8_R50_K400
 
 AVA:
-  # training: use val;  test: use test
+  # train and test file need to be changed for different work
+
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
 
   # GROUNDTRUTH_FILE: "ava_val_gt.csv"
   # TEST_LISTS: ["val.csv"]
   # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
 
   GROUNDTRUTH_FILE: "ava_test_gt.csv"
   TEST_LISTS: ["test.csv"]

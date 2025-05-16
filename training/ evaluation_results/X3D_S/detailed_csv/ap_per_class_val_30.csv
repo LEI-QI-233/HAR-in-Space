@@ -1,0 +1,51 @@
+action_id,ap50,action_name
+1,0.01874,bend/bow (at the waist)
+3,nan,crouch/kneel
+5,nan,fall down
+6,0.01116,get up
+7,0.01667,jump/leap
+8,0.01389,lie/sleep
+9,0.07143,martial art
+10,nan,run/jog
+11,0.65289,sit
+12,0.94027,stand
+14,0.45799,walk
+17,0.88307,carry/hold (an object)
+20,nan,"climb (e.g., a mountain)"
+22,0.00643,"close (e.g., a door, a box)"
+24,0.01522,cut
+26,0.00488,dress/undress clothing
+27,0.02703,drink
+28,nan,operate spaceship
+29,0.03823,eat
+30,0.05079,enter
+34,0.03498,hit (an object)
+36,0.13108,lift/pick up
+38,0.02829,"open (e.g., a window, a car door)"
+41,nan,play musical instrument
+43,0.22866,point to (an object)
+45,0.01852,pull (an object)
+46,0.00778,push (an object)
+47,0.13566,put down
+48,0.01471,read
+56,nan,take a photo
+57,nan,text on/look at a cellphone
+58,0.01429,throw
+59,0.12427,touch (an object)
+60,0.00262,"turn (e.g., a screwdriver)"
+61,0.51890,"watch (e.g., TV)/any unspecified action"
+62,0.05263,work on a computer
+63,nan,write
+64,nan,fight/hit (a person)
+65,0.04665,give/serve (an object) to (a person)
+66,0.03741,grab (a person)
+67,nan,hand clap
+68,nan,hand shake
+69,0.09318,hand wave
+70,nan,hug (a person)
+72,nan,kiss (a person)
+74,0.09588,listen to (a person)
+76,0.00442,push (another person)
+78,0.01078,take (an object) from (a person)
+79,0.92592,"talk to (e.g., self, a person, a group)"
+80,0.43643,watch (a person)

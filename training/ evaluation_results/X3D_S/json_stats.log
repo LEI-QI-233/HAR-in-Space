@@ -1,0 +1,10 @@
+json_stats: {"mode": "val", "cur_epoch": "5", "map": 0.11776, "f1_macro": 0.04334, "auroc_macro": 0.68067, "recall_macro": 0.03907, "gpu_mem": "3.71G", "RAM": "68.93/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "10", "map": 0.13591, "f1_macro": 0.04919, "auroc_macro": 0.73653, "recall_macro": 0.04664, "gpu_mem": "3.72G", "RAM": "68.99/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "15", "map": 0.15229, "f1_macro": 0.05471, "auroc_macro": 0.76674, "recall_macro": 0.04510, "gpu_mem": "3.72G", "RAM": "68.99/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "20", "map": 0.16635, "f1_macro": 0.05975, "auroc_macro": 0.77947, "recall_macro": 0.04901, "gpu_mem": "3.72G", "RAM": "69.06/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "25", "map": 0.17258, "f1_macro": 0.06024, "auroc_macro": 0.78250, "recall_macro": 0.05086, "gpu_mem": "3.72G", "RAM": "69.00/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "30", "map": 0.17144, "f1_macro": 0.06485, "auroc_macro": 0.78240, "recall_macro": 0.05518, "gpu_mem": "3.72G", "RAM": "68.99/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "35", "map": 0.17586, "f1_macro": 0.06630, "auroc_macro": 0.78269, "recall_macro": 0.05633, "gpu_mem": "3.72G", "RAM": "69.00/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "40", "map": 0.17062, "f1_macro": 0.06619, "auroc_macro": 0.78157, "recall_macro": 0.05577, "gpu_mem": "3.72G", "RAM": "68.98/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "test", "map": 0.14068, "f1_macro": 0.05773, "auroc_macro": 0.78226, "recall_macro": 0.04517} epoch 35
+Params: 2,015,828

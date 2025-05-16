@@ -1,0 +1,14 @@
+json_stats: {"mode": "val", "cur_epoch": "5", "map": 0.24401, "f1_macro": 0.09720, "auroc_macro": 0.83580, "recall_macro": 0.08541, "gpu_mem": "9.79G", "RAM": "61.46/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "10", "map": 0.33171, "f1_macro": 0.15522, "auroc_macro": 0.84313, "recall_macro": 0.12758, "gpu_mem": "9.79G", "RAM": "61.42/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "15", "map": 0.38653, "f1_macro": 0.16371, "auroc_macro": 0.85012, "recall_macro": 0.13920, "gpu_mem": "9.79G", "RAM": "61.42/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "20", "map": 0.38750, "f1_macro": 0.21091, "auroc_macro": 0.84406, "recall_macro": 0.18109, "gpu_mem": "9.79G", "RAM": "61.44/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "25", "map": 0.39846, "f1_macro": 0.21774, "auroc_macro": 0.84404, "recall_macro": 0.18859, "gpu_mem": "9.79G", "RAM": "61.43/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "30", "map": 0.40225, "f1_macro": 0.21853, "auroc_macro": 0.84583, "recall_macro": 0.18987, "gpu_mem": "9.79G", "RAM": "61.36/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "35", "map": 0.40176, "f1_macro": 0.22158, "auroc_macro": 0.84598, "recall_macro": 0.19049, "gpu_mem": "9.79G", "RAM": "61.39/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "40", "map": 0.40317, "f1_macro": 0.21833, "auroc_macro": 0.84545, "recall_macro": 0.19077, "gpu_mem": "9.79G", "RAM": "61.40/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "45", "map": 0.40314, "f1_macro": 0.21917, "auroc_macro": 0.84758, "recall_macro": 0.18620, "gpu_mem": "9.79G", "RAM": "60.85/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "50", "map": 0.40151, "f1_macro": 0.22129, "auroc_macro": 0.84585, "recall_macro": 0.19250, "gpu_mem": "9.79G", "RAM": "61.01/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "55", "map": 0.40208, "f1_macro": 0.22095, "auroc_macro": 0.84617, "recall_macro": 0.19158, "gpu_mem": "9.79G", "RAM": "60.95/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "val", "cur_epoch": "60", "map": 0.40284, "f1_macro": 0.24280, "auroc_macro": 0.84673, "recall_macro": 0.21240, "gpu_mem": "9.79G", "RAM": "60.95/251.58G", "_type": "val_epoch"}
+json_stats: {"mode": "test", "map": 0.45190, "f1_macro": 0.26125, "auroc_macro": 0.88490, "recall_macro": 0.22771} epoch 40
+Params: 31,736,946

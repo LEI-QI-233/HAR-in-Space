@@ -20,11 +20,15 @@ TEST:
   NUM_SPATIAL_CROPS: 3
 
 AVA:
-  # train 和 test 每次都需要改
+  # train and test file need to be changed for different work
+
+# -------------- For TRAIN.ENABLE: TRUE and TEST.ENABLE: FALSE ------------------
 
   # GROUNDTRUTH_FILE: "ava_val_gt.csv"
   # TEST_LISTS: ["val.csv"]
   # TEST_PREDICT_BOX_LISTS: ["ava_val_predicted_boxes.csv"]
+
+# -------------- For TRAIN.ENABLE: FALSE and TEST.ENABLE: TRUE ------------------
 
   GROUNDTRUTH_FILE: "ava_test_gt.csv"
   TEST_LISTS: ["test.csv"]
@@ -66,16 +70,16 @@ BN:
   NUM_BATCHES_PRECISE: 200
   WEIGHT_DECAY: 0.0
 SOLVER:
-  BASE_LR: 0.1                          # 初始学习率保持不变
-  LR_POLICY: steps_with_relative_lrs   # 分段相对学习率策略
-  STEPS: [0, 20, 30, 36]               # 最后一次学习率下降提前到第18个 epoch
-  LRS: [1, 0.1, 0.01, 0.001]           # 对应每个 STEP 的相对缩放因子
-  MAX_EPOCH: 40                        # 总训练轮数提高到25，使最后阶段有足够训练
-  MOMENTUM: 0.9                        # 经典动量值
-  WEIGHT_DECAY: 1e-5                   # 提高到1e-5以增加正则化
-  WARMUP_EPOCHS: 5.0                   # 预热5个 epoch（占20%训练期）
-  WARMUP_START_LR: 0.000125            # 预热起始学习率保持不变
-  OPTIMIZING_METHOD: sgd               # 优化器类型不变
+  BASE_LR: 0.1                          
+  LR_POLICY: steps_with_relative_lrs   
+  STEPS: [0, 20, 30, 36]               
+  LRS: [1, 0.1, 0.01, 0.001]           
+  MAX_EPOCH: 40                       
+  MOMENTUM: 0.9                        
+  WEIGHT_DECAY: 1e-5                   
+  WARMUP_EPOCHS: 5.0                  
+  WARMUP_START_LR: 0.000125         
+  OPTIMIZING_METHOD: sgd               
 
 MODEL:
   NUM_CLASSES: 50
