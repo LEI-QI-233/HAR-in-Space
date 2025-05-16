@@ -1,12 +1,14 @@
 # Dataset Indroduction
 Here are the details about this dataset. Including the description and format of each file. And the video description and download.
 
-- if you downloaded our dataset from Hugging face, you do not need to download videos from google drive again. 
+- You can also download our entire dataset and evaluation result from our [Hugging Face](https://huggingface.co/datasets/LEI-QI-233/MicroG-4M) website
 
 ## Videos
 
 ### Download
 Please download the zip file of all videos from [here](https://drive.google.com/file/d/1E8WBvKzWOEYbKwQw7qGeoN8fI0OrwQDl/view?usp=sharing)
+
+*NOTE:* if you downloaded our dataset from Hugging face, you do not need to download videos from google drive again. 
 
 ### Folder Structure
 The video folder has the following structure:
