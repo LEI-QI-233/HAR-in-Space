@@ -62,7 +62,7 @@ The headers are:
 - `video_id`
 - `movie_or_real`: m for movie and r for real
 - `person_id`
-- `action`: the id of action. Details see [label_map](Dataset/label_map/label_map.pbtxt)
+- `action`: the id of action. Details see [label_map](dataset/label_map/label_map.pbtxt)
 
 #### [bounding_boxes.csv](csv_files/bounding_boxes.csv)
 The content of this file is the bounding box information of all videos, which corresponds to the [actions.csv](Dataset/csv_files/actions.csv) with video_id and person_id.  
@@ -88,6 +88,9 @@ This label map is modified based on the label map of the [ava dataset](https://r
 
 #### [label_map.pdf](label_map/label_map.pdf)
 The label map is provided in PDF format for easy manual reading and checking.
+
+### [vqa_and_captioning](./vqa_and_captioning/)
+This folder contains the data for visual question answering and captioning in `json` format.
 
 ### [statistics](statistics/)
 In this folder are all the statistics for the dataset.
