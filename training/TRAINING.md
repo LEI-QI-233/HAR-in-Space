@@ -4,6 +4,8 @@
 
 here are the raw data of training validation and test on PySlowFast.
 
+- The checkpoint epoch is not stored here in GitHub. But you can download it from our Hugging Face website. Please check [DATASET.md](../dataset/DATASET.md) for details.
+
 
 ## [configs_backup](./configs_backup/)
 
