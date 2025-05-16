@@ -1,6 +1,8 @@
 # Dataset Indroduction
 Here are the details about this dataset. Including the description and format of each file. And the video description and download.
 
+- if you downloaded our dataset from Hugging face, you do not need to download videos from google drive again. 
+
 ## Videos
 
 ### Download
