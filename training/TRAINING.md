@@ -17,3 +17,6 @@ are the csv files from [original dataset](../dataset/csv_files/) convert to ava-
 the different from ava format is that we use key frame stamp instead of key time stamp. csv file records frame id directly.
 
 you can check [dataset.md](../dataset/DATASET.md) to know how to transfer frame id to original second.
+
+
+for training input details, please check [INPUT.md](../codes/PySlowFast_for_HAR/ava/INPUT.md)
