@@ -32,3 +32,5 @@ it contains the codes of creating this dataset.
 
 it contains the code to do the statistics in [statistics](../dataset/statistics/) folder.
 
+## [vqa_caption_eval](./vqa_caption_eval/) 
+is the folder of all codes for evaluating VQA and Captioning
