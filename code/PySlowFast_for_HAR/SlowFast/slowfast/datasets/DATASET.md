@@ -18,7 +18,41 @@ path_to_video_N label_N
 
 All the Kinetics models in the Model Zoo are trained and tested with the same data as [Non-local Network](https://github.com/facebookresearch/video-nonlocal-net/blob/master/DATASET.md). For dataset specific issues, please reach out to the [dataset provider](https://deepmind.com/research/open-source/kinetics).
 
-## AVA
+## NEW: Our AVA-like format for HAR
+
+0. make sure you have installed this PyslowFast following [INSTALL.md](../../INSTALL.md).
+
+1. Download data files from Hugging Face
+
+```
+git clone https://huggingface.co/datasets/LEI-QI-233/MicroG-HAR-train-ready
+```
+
+2.
+```
+cd MicroG-HAR-train-ready/ava
+```
+3. unzip the frame_list.zip file
+
+4. then you have this folder finished as your input directory:
+```
+ava
+|_ frames
+|  |_ [video name 0]
+|  |  |_ [video name 0]_000001.jpg
+|  |  |_ [video name 0]_000002.jpg
+|  |  |_ ...
+|  |_ [video name 1]
+|     |_ [video name 1]_000001.jpg
+|     |_ [video name 1]_000002.jpg
+|     |_ ...
+|_ frame_lists
+|_ annotations
+```
+
+5. use the config file from `SlowFast/configs/AVA/HAR` or from `MicroG-HAR-train-ready/configs/HAR`
+
+## ~~AVA~~ The original AVA input can not be used.
 
 The AVA Dataset could be downloaded from the [official site](https://research.google.com/ava/download.html#ava_actions_download)
 

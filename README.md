@@ -1,5 +1,24 @@
 # MicroG-4M: a benchmark dataset specific for HAR, VQA, and Captioning under microgravity
 
+## 🚀 Quick Links
+
+<p align="center">
+  <a href="https://huggingface.co/datasets/LEI-QI-233/MicroG-4M">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-orange?logo=huggingface" alt="Hugging Face Dataset"/>
+  </a>
+  <a href="./code/CODE.md">
+    <img src="https://img.shields.io/badge/GitHub-CODE.md-28C840?logo=github" alt="CODE.md"/>
+  </a>
+  <a href="./benchmark/BENCHMARK.md">
+    <img src="https://img.shields.io/badge/GitHub-BENCHMARK.md-1E90FF?logo=github" alt="BENCHMARK.md"/>
+  </a>
+  <a href="./statistics/STATISTICS.md">
+    <img src="https://img.shields.io/badge/GitHub-STATISTICS.md-violet?logo=github" alt="STATISTICS.md"/>
+  </a>
+</p>
+
+---
+
 ![](./assets/main_teaser.jpg)
 
 ---
@@ -35,7 +54,7 @@ Baseline evaluations using state-of-the-art models (e.g., SlowFast, X3D, InternV
 
 ## Dataset Files
 
-The complete MicroG-4M dataset is hosted in our [Hugging Face repository](https://huggingface.co/datasets/LEI-QI-233/MicroG-4M), where you can view metadata and download the full dataset. For detailed information and specifications, please refer to this [README](https://huggingface.co/datasets/LEI-QI-233/MicroG-4M/blob/main/README.md) file.
+The complete MicroG-4M dataset is hosted on our [Hugging Face repository](https://huggingface.co/datasets/LEI-QI-233/MicroG-4M), where you can view metadata and download the full dataset. For detailed information and specifications, please refer to this [README](https://huggingface.co/datasets/LEI-QI-233/MicroG-4M/blob/main/README.md) file.
 
 ## Related Code
 

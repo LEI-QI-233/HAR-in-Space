@@ -6,7 +6,7 @@ This document presents detailed benchmark information for MicroG-4M.
 
 In order to use the PySlowFast for training and evaluation HAR tass, we converted our dataset into a format almost compatible with the AVA dataset, sothat we can use [PySlowFast_for_HAR](../code/PySlowFast_for_HAR/) to train and evaluate.
 
-The converted dataset files are hosted in [MicroG-HAR-train-ready](https://huggingface.co/datasets/LEI-QI-233/MicroG-HAR-train-ready) dataset repository on Hugging Face. where you can view metadata and download the full dataset. For detailed information and specifications, please refer to this [README](https://huggingface.co/datasets/LEI-QI-233/MicroG-HAR-train-ready/blob/main/README.md) file.
+The converted dataset files are hosted on [MicroG-HAR-train-ready](https://huggingface.co/datasets/LEI-QI-233/MicroG-HAR-train-ready) dataset repository on Hugging Face. where you can view metadata and download the full dataset. For detailed information and specifications, please refer to this [README](https://huggingface.co/datasets/LEI-QI-233/MicroG-HAR-train-ready/blob/main/README.md) file.
 
 The [MicroG-HAR-train-ready](https://huggingface.co/datasets/LEI-QI-233/MicroG-HAR-train-ready) repository provides a convenient and fast way to train and evaluate our dataset and model using the [PySlowFast_for_HAR](../code/PySlowFast_for_HAR/) code. Alternatively, you can use the original dataset and convert it into any format you need.
 

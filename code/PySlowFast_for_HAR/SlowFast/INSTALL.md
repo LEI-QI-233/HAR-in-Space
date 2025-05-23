@@ -30,7 +30,7 @@
     # You can find more details at https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md
 ```
 
-## Pytorch
+## Pytorch (maybe dont need this step)
 Please follow PyTorch official instructions to install from source:
 ```
 git clone --recursive https://github.com/pytorch/pytorch
@@ -38,9 +38,12 @@ git clone --recursive https://github.com/pytorch/pytorch
 
 ## PySlowFast
 
-Clone the PySlowFast Video Understanding repository.
+~~Clone the PySlowFast Video Understanding repository.~~
+
+Clone our repository
+
 ```
-git clone https://github.com/facebookresearch/slowfast
+git clone https://github.com/LEI-QI-233/HAR-in-Space
 ```
 
 Add this repository to $PYTHONPATH.
@@ -52,12 +55,19 @@ export PYTHONPATH=/path/to/SlowFast/slowfast:$PYTHONPATH
 
 After having the above dependencies, run:
 ```
-git clone https://github.com/facebookresearch/slowfast
 cd SlowFast
 python setup.py build develop
 ```
 
+or
+
+```
+cd SlowFast
+pip install -e .
+```
+
 Now the installation is finished, run the pipeline with:
 ```
-python tools/run_net.py --cfg configs/Kinetics/C2D_8x8_R50.yaml NUM_GPUS 1 TRAIN.BATCH_SIZE 8 SOLVER.BASE_LR 0.0125 DATA.PATH_TO_DATA_DIR path_to_your_data_folder
+python tools/run_net.py --cfg configs/HAR/C2D_8x8_R50.yaml
 ```
+Note: our config file can also be download from [here](https://huggingface.co/datasets/LEI-QI-233/MicroG-HAR-train-ready)
