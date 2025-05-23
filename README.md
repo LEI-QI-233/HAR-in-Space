@@ -78,7 +78,7 @@ All statistic data of dataset itself and of benchmark are in the [statistics](./
 ## Contributors
 HAR-in-Space is written and maintained by [Lei Qi](https://github.com/LEI-QI-233), [Di Wen](https://github.com/Kratos-Wen) and [Kunyu Peng](https://cvhci.iar.kit.edu/people_2123.php)
 
-## Citing Zero-Gravity Human Action Recognition Dataset
+## Citing MicroG-4M
 
 If you find this dataset useful in your research, please use the following BibTeX entry for citation:
 
