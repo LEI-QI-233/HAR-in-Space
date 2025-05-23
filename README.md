@@ -1,4 +1,4 @@
-# [MicroG-4M](dataset): a benchmark dataset specific for HAR, VQA, and Captioning under microgravity
+# MicroG-4M: a benchmark dataset specific for HAR, VQA, and Captioning under microgravity
 
 ![](./assets/main_teaser.jpg)
 
@@ -31,6 +31,8 @@ Baseline evaluations using state-of-the-art models (e.g., SlowFast, X3D, InternV
 
 > **Annotation Process:** Action annonations, Captions and QA pairs were created by human annotators and refined through multiple rounds of review to ensure high semantic fidelity, contextual accuracy, and relevance to microgravity settings.
 
+---
+---
 
 ## Dataset Files
 
@@ -48,12 +50,12 @@ Please refer to the [BENCHMARK.md](./benchmark/BENCHMARK.md) for detailed inform
 ## Statistics
 All statistic data of dataset itself and of benchmark are in the [statistics](./statistics/) folder. Please refer to the [STATISTICS.md](./statistics/STATISTICS.md) file for details.
 
-**Quick links to summarized info:**
+**Quick links to summarized info of MicroG-4M:**
 
-- [Dataset Statictics](./statistics/dataset_statistics/HAR_Dataset_Statistics.pdf)
-- [Benchmark Eval. and Statistics](./statistics/benchmark_statistics/HAR_finetune_eval.pdf)
+- [HAR_Dataset_Statistics](./statistics/dataset_statistics/HAR_Dataset_Statistics.pdf)
+- [HAR_finetune_eval](./statistics/benchmark_statistics/HAR_finetune_eval.pdf)
 
-
+---
 
 ## Contributors
 HAR-in-Space is written and maintained by [Lei Qi](https://github.com/LEI-QI-233), [Di Wen](https://github.com/Kratos-Wen) and [Kunyu Peng](https://cvhci.iar.kit.edu/people_2123.php)
@@ -71,6 +73,8 @@ If you find this dataset useful in your research, please use the following BibTe
 }
 ```
 
+---
+
 ## Reference
 Our action-recognition baselines base on code from [PySlowFast](https://github.com/facebookresearch/SlowFast)
 
@@ -83,3 +87,6 @@ Our action-recognition baselines base on code from [PySlowFast](https://github.c
   year =         {2020}
 }
 ```
+
+---
+---
