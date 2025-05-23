@@ -1,6 +1,5 @@
 # MicroG-4M: a benchmark dataset specific for HAR, VQA, and Captioning under microgravity
 
-## 🚀 Quick Links
 
 <p align="center">
   <a href="https://huggingface.co/datasets/LEI-QI-233/MicroG-4M">
@@ -17,7 +16,6 @@
   </a>
 </p>
 
----
 
 ![](./assets/main_teaser.jpg)
 
