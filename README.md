@@ -21,7 +21,6 @@ MicroG-4M supports three core tasks:
 
 Baseline evaluations using state-of-the-art models (e.g., SlowFast, X3D, InternVideo, GPT-4o) demonstrate significant performance degradation under microgravity, underlining the necessity of dedicated benchmarks and domain-specific adaptation.
 
----
 
 ## Four Core Characteristics (“4M”)
 - **Multi-domain**: videos from real missions (ISS, Tiangong, EVA) and cinematic simulations
@@ -31,7 +30,6 @@ Baseline evaluations using state-of-the-art models (e.g., SlowFast, X3D, InternV
 
 > **Annotation Process:** Action annonations, Captions and QA pairs were created by human annotators and refined through multiple rounds of review to ensure high semantic fidelity, contextual accuracy, and relevance to microgravity settings.
 
----
 ---
 
 ## Dataset Files
