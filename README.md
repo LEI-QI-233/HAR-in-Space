@@ -14,6 +14,8 @@ To address this, we introduce **MicroG-4M**, the first large-scale dataset and b
 - **1 238** human-written, context-rich captions
 - **7 000+** open-ended question–answer pairs supporting factual, causal, and counterfactual reasoning
 
+---
+
 MicroG-4M supports three core tasks:
 1. **Fine-grained multi-label action recognition**  
 2. **Video captioning**  
