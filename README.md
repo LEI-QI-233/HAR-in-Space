@@ -7,6 +7,9 @@
 ### 🚀 Quick Links
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2506.02845">
+    <img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=arxiv" alt="arXiv Paper"/>
+  </a>
   <a href="https://huggingface.co/datasets/LEI-QI-233/MicroG-4M">
     <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-orange?logo=huggingface" alt="Hugging Face Dataset"/>
   </a>
@@ -83,11 +86,14 @@ HAR-in-Space is written and maintained by [Lei Qi](https://github.com/LEI-QI-233
 If you find this dataset useful in your research, please use the following BibTeX entry for citation:
 
 ```BibTeX
-@misc{harinspace2025,
-  author =       {Lei Qi and Di Wen},
-  title =        {MicroG-4M: a benchmark dataset specific for HAR, VQA, and Captioning under microgravity},
-  howpublished = {\url{https://github.com/LEI-QI-233/HAR-in-Space}},
-  year =         {2025}
+@misc{wen2025earthunderstandinghumanactions,
+      title={Go Beyond Earth: Understanding Human Actions and Scenes in Microgravity Environments}, 
+      author={Di Wen and Lei Qi and Kunyu Peng and Kailun Yang and Fei Teng and Ao Luo and Jia Fu and Yufan Chen and Ruiping Liu and Yitian Shi and M. Saquib Sarfraz and Rainer Stiefelhagen},
+      year={2025},
+      eprint={2506.02845},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.02845}, 
 }
 ```
 
